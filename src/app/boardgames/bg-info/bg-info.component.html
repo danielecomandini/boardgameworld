@@ -1,16 +1,28 @@
 <div class="row">
-  <div class="col-lg-4 col-md-4 col-xs-4 infoLabel">Tipo di gioco:</div>
-  <div class="col-lg-8 col-md-8 col-xs-8 infoValue">{{ selectedGame?.gameType.type }}</div>
+  <div class="col-lg-6 col-md-6 col xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading bg-info">Tipo di gioco:</div>
+      <div class="panel-body">{{ selectedGame?.gameType.type }}</div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading bg-info">Numero di giocatori::</div>
+      <div class="panel-body">{{ selectedGame?.info.minPlayer }} - {{ selectedGame?.info.maxPlayer }} giocatori</div>
+    </div>
+  </div>
 </div>
 <div class="row">
-  <div class="col-lg-4 col-md-4 col-xs-4 infoLabel"><i class="fas fa-envelope"></i> Numero di giocatori:</div>
-  <div class="col-lg-8 col-md-8 col-xs-8 infoValue">{{ selectedGame?.info.minPlayer }} - {{ selectedGame?.info.maxPlayer }} giocatori</div>
-</div>
-<div class="row">
-  <div class="col-lg-4 col-md-4 col-xs-4 infoLabel">Preparazione partita:</div>
-  <div class="col-lg-8 col-md-8 col-xs-8 infoValue">{{ selectedGame?.info.preparationTime }} minuti</div>
-</div>
-<div class="row">
-  <div class="col-lg-4 col-md-4 col-xs-4 infoLabel">Durata media partita:</div>
-  <div class="col-lg-8 col-md-8 col-xs-8 infoValue">{{ selectedGame?.info.timeDuration }} minuti</div>
+  <div class="col-lg-6 col-md-6 col xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading bg-info"><i class="far fa-clock"></i> Preparazione partita:</div>
+      <div class="panel-body">{{ selectedGame?.info.preparationTime }} minuti</div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col xs-6">
+    <div class="panel panel-default">
+      <div class="panel-heading bg-info"><i class="far fa-clock"></i> Durata media partita:</div>
+      <div class="panel-body">{{ selectedGame?.info.timeDuration }} minuti</div>
+    </div>
+  </div>
 </div>

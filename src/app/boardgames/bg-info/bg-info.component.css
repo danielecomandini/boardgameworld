@@ -9,3 +9,13 @@
     font-size: 12px;
     font-style: italic;
 }
+
+.panel-heading.bg-info {
+    background-color: #0088AA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    size: 20px;
+    color: #FFFFFF;
+    text-align: left;
+    text-decoration: none;
+}
