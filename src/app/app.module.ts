@@ -7,13 +7,16 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { BoardgamesComponent } from './boardgames/boardgames.component';
 import { ContactComponent } from './contact/contact.component';
+import { BoardgamesComponent } from './boardgames/boardgames.component';
+import { BgDetailsComponent } from './boardgames/bg-details/bg-details.component';
+import { BgInfoComponent } from './boardgames/bg-info/bg-info.component';
 
 const appRoutes: Routes = [ 
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'boardgames', component: BoardgamesComponent },
+  { path: 'boardgame/:id' , component: BgDetailsComponent },
   { path: 'contactme', component: ContactComponent }
 ];
 
@@ -23,8 +26,10 @@ const appRoutes: Routes = [
     TitleComponent,
     HeaderComponent,
     HomeComponent,
+    ContactComponent,
     BoardgamesComponent,
-    ContactComponent
+    BgDetailsComponent,
+    BgInfoComponent
   ],
   imports: [
     RouterModule.forRoot( appRoutes, { enableTracing: true } ),

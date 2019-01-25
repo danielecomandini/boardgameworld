@@ -1,3 +1,10 @@
-<p>
-  home works!
-</p>
+<div class="row text-center text-lg-left">
+
+  <div class="col-lg-3 col-md-4 col-xs-6" *ngFor="let bg of boardGameList">
+    <div class="gameName">{{ bg.name }}</div>
+    <a href="/boardgame/{{bg.id}}" class="d-block mb-4 h-100">
+      <img src="assets/images/thumb/{{ bg.picture }}"
+           class="img-fluid img-thumbnail img-thumbnail-danco" alt="{{ bg.name }}" title="{{ bg.name }}">
+    </a>
+  </div>
+</div>
