@@ -27,6 +27,7 @@ export class BgDetailsComponent implements OnInit {
       let elem = this.boardGameList[i];
       if( elem.id == this.boardGameId ) {
         this.boardGame = elem;
+        console.log( "Board game picture: " + this.boardGame.picture );
         break;
       }
     }
