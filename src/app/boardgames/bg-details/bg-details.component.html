@@ -1,17 +1,29 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-xs-12">
-      <h1>{{ boardGame?.name }}
-      </h1>
+<!-- <div class="row">
+  <div class="col-lg-12 col-md-12 col-xs-12" style="border: 2px solid #0088AA">
+    <div id="background" [ngStyle]="{'background':'url(/assets/images/thumb/' + boardGame?.picture + ')', 'height': '200px'} "></div>
+    <div id="content" class="row" style="border: 2px solid yellow">
+        <div class="col-lg-2 col-md-4 col-xs-6" style="border: 2px solid red">
+          <img src="/assets/images/logo/bgw_logo.png" alt="">
+        </div>
+        <div class="col-lg-10 col-md-8 col-xs-6 boardGameName" style="border: 2px solid green">
+          {{ boardGame?.name }}
+        </div>
     </div>
   </div>
+  <div class="col-lg-12 col-md-12 col-xs-12" style="border: 2px solid #0088AA">
+    CONTENT
+  </div>
+</div> -->
 
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-xs-4">
-      <img src="/assets/images/thumb/{{ boardGame?.picture }}" alt="{{ boardGame?.name }}" title="{{ boardGame?.name }}" class="img-detail img-logo">
-    </div>
-    <div class="col-lg-8 col-md-8 col-xs-8">
-      <bgw-bg-info [selectedGame]="getSelectedBoardGame()"></bgw-bg-info>
-    </div>
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-xs-12">
+      <div id="background" [ngStyle]="{'background':'linear-gradient(to left, rgba(255,255,255,0) 20%,
+      rgba(255,255,255,1)), url(/assets/images/thumb/' + boardGame?.picture + ')', 'height': '200px'} "></div>
+      <div class="row" id="content">
+        <div class="col-lg-2 col-md-4 col-xs-6 detail-logo"></div>
+        <div class="col-lg-2 col-md-4 col-xs-6 detail-game-name">
+          <h1 class="game-name-positioning">{{ boardGame?.name }}</h1>
+        </div>
+      </div>
   </div>
 </div>

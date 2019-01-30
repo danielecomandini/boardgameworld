@@ -1,13 +1,71 @@
-.img-detail {
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
+#background {
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    opacity: 0.55;
+    width: 100%;
+    height: 200px;
+    position: relative;
 }
 
-@media (max-width: 480px) {
-    .img-logo{ 
-        width: 75px;
-        height: auto;
-    }
+#content {
+    padding-left: 20px; 
+    position: absolute; 
+    bottom: 0px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 200px;
 }
+
+.detail-logo {
+    background-image: url('/assets/images/logo/bgw_logo.png');
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 100%;
+}
+
+.detail-game-name {
+    width: 85%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.game-name-positioning {
+    position: absolute;
+    bottom: 15%;
+}
+
+/*   
+  @media (max-width: 480px) {
+    #background {
+        background-position: center;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        opacity: 0.55;
+        width: 100%;
+        height: 100px;
+        position: relative;
+      }
+    
+    #content {
+        padding-left: 20px; 
+        position: absolute; 
+        height: 100px;
+        bottom: 0px;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  }
+  
+  @media (min-width: 768px) {
+      #background { height: 150px; }
+  }
+  
+  @media (min-width: 992px) {
+      #background { height: 100px; }
+  } */
