@@ -40,7 +40,7 @@
     bottom: 15%;
 }
 
-/*   
+ 
   @media (max-width: 480px) {
     #background {
         background-position: center;
@@ -60,6 +60,10 @@
         color: black;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+
+    #BGW_LOGO {
+        display: none;
+    }
   }
   
   @media (min-width: 768px) {
@@ -68,4 +72,4 @@
   
   @media (min-width: 992px) {
       #background { height: 100px; }
-  } */
+  }
