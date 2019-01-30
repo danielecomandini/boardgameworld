@@ -16,13 +16,13 @@ export class DancoUtils {
             country.flag = "japan.png";
         } else if( countryCode === 'ITA' ) {
             country.name = "Italy";
-            country.flag = "ita.png";
+            country.flag = "italy.png";
         } else if( countryCode === 'BRA' ) {
             country.name = "Brazil";
-            country.flag = "bra.png";
+            country.flag = "brazil.png";
         } else if( countryCode === 'NED' ) {
             country.name = "Netherland";
-            country.flag = "ned.png";
+            country.flag = "netherland.png";
         } 
 
         return country;

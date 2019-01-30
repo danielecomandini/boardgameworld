@@ -1,0 +1,55 @@
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md 4 col-xs-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <i class="fas fa=info-circle"></i> Informazioni generali 
+                </div>
+                <div class="panel-body">
+                    <table>
+                        <tr valign="top">
+                            <td class="info-label">Creatori:</td>
+                            <td class="info-value">
+                                <p *ngFor="let a of selectedGame?.authors">{{ a.getFullName() }}</p>
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <td class="info-label">Anno di creazione:</td>
+                            <td class="info-value">{{ selectedGame?.info.year }}
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <td class="info-label">Distribuzioni:</td>
+                            <td class="info-value">
+                                <p *ngFor="let e of selectedGame?.editors">
+                                    <img src="/assets/images/flags/{{ e.country.flag }}" alt="{{ e.country.name }}" title="{{ e.country.name }}"> {{ e.name }}
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md 4 col-xs-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <i class="fas fa=info-circle"></i> Gioco 
+                </div>
+                <div class="panel-body">
+                    <table>
+                        <tr valign="top">
+                            <td class="info-label">Numero Giocatori:</td>
+                            <td class="info-value">{{ selectedGame?.info.minPlayer }} - {{ selectedGame?.info.maxPlayer }} giocatori</td>
+                        </tr>
+                        <tr valign="top">
+                            <td class="info-label"> Durata partita:</td>
+                            <td class="info-value">{{ selectedGame?.info.timeDuration }} min</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,32 @@
-Selected game: {{ selectedGame?.id }}
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-md 8 col-xs-12">
+            SCRIVERE
+        </div>
+
+        <div class="col-lg-3 col-md 4 col-xs-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <i class="fas fa=info-circle"></i> Gioco 
+                </div>
+                <div class="panel-body">
+                    <table>
+                        <tr valign="top">
+                            <td class="info-label">Anno:</td>
+                            <td class="info-value">{{ selectedGame?.info.year }}</td>
+                        </tr>
+                        <tr valign="top">
+                            <td class="info-label">Numero Giocatori:</td>
+                            <td class="info-value">{{ selectedGame?.info.minPlayer }} - {{ selectedGame?.info.maxPlayer }} giocatori</td>
+                        </tr>
+                        <tr valign="top">
+                            <td class="info-label"> Durata partita:</td>
+                            <td class="info-value">{{ selectedGame?.info.timeDuration }} min</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
