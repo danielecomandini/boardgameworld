@@ -1,14 +1,15 @@
 <br />
 <div class="container">
     <div class="row">
-        <div class="col-lg-9 col-md 8 col-xs-12">
-            SCRIVERE
+        <div class="col-lg-9 col-md-8 col-xs-12 game-description">
+            <bgw-catan *ngIf="selectedGame?.name === 'Catan'"></bgw-catan>
+            <bgw-cluedo *ngIf="selectedGame?.name === 'Cluedo'"></bgw-cluedo>
         </div>
 
-        <div class="col-lg-3 col-md 4 col-xs-12">
+        <div class="col-lg-3 col-md-4 col-xs-12 game-info">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <i class="fas fa=info-circle"></i> Gioco 
+                    <i class="fas fa=info-circle"></i> INFORMAZIONI 
                 </div>
                 <div class="panel-body">
                     <table>

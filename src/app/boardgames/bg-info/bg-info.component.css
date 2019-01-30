@@ -1,21 +1,6 @@
-.panel > .panel-heading {
-    background-color: #0088AA;
-    font-weight: bold;
-    color: white;
-    size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.panel > .panel-body {
-    background-color: #DDDDDD;
-}
-
-.info-label {
-    font-weight: bold;
-    color: #0088AA;
-    width: 45%;
-}
-
-.info-label {
-    font-weight: bold;
+@media (max-width: 480px) {
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
