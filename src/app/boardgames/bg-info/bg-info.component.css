@@ -1,6 +1,14 @@
+.bgw-game-info-style {
+    background-color: #0088AA;
+    color: white;
+    width: 30%;
+}
+
 @media (max-width: 480px) {
     .row {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    
 }

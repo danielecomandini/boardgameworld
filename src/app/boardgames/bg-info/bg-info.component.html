@@ -7,27 +7,54 @@
         </div>
 
         <div class="col-lg-3 col-md-4 col-xs-12 game-info">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <i class="fas fa=info-circle"></i> INFORMAZIONI 
+            <div class="row form-inline">
+                <div class="col-xs-12">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon bgw-game-info-style"><i class="fas fa-people-carry"></i></div>
+                        <input type="text" 
+                            class="form-control eword" size="50" 
+                            value="{{ selectedGame?.info.minPlayer }} - {{ selectedGame?.info.maxPlayer }} players" 
+                            readonly>
+                    </div>
                 </div>
-                <div class="panel-body">
-                    <table>
-                        <tr valign="top">
-                            <td class="info-label">Anno:</td>
-                            <td class="info-value">{{ selectedGame?.info.year }}</td>
-                        </tr>
-                        <tr valign="top">
-                            <td class="info-label">Numero Giocatori:</td>
-                            <td class="info-value">{{ selectedGame?.info.minPlayer }} - {{ selectedGame?.info.maxPlayer }} giocatori</td>
-                        </tr>
-                        <tr valign="top">
-                            <td class="info-label"> Durata partita:</td>
-                            <td class="info-value">{{ selectedGame?.info.timeDuration }} min</td>
-                        </tr>
-                    </table>
+            </div>
+            <div class="row form-inline">
+                <div class="col-xs-12">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon bgw-game-info-style"><i class="fas fa-clock"></i></div>
+                        <input type="text" 
+                            class="form-control eword" size="50" 
+                            value="{{ selectedGame?.info.timeDuration }} min" 
+                            readonly>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- <div class="col-lg-3 col-md-4 col-xs-12 game-info">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <i fa class="fas fa-people-carry"></i>
+                        </div>
+                        <div class="panel-body">
+                            {{ selectedGame?.info.minPlayer }} - {{ selectedGame?.info.maxPlayer }} players
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <i fa class="far fa-clock"></i>
+                        </div>
+                        <div class="panel-body">
+                            60 min
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
     </div>
 </div>
